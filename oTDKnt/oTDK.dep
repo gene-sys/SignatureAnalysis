@@ -1,0 +1,53 @@
+# Microsoft Developer Studio Generated Dependency File, included by oTDK.mak
+
+.\CntrItem.cpp : \
+	".\CntrItem.h"\
+	".\oTDK.h"\
+	".\oTDKDoc.h"\
+	".\oTDKView.h"\
+	
+
+.\LeftView.cpp : \
+	".\LeftView.h"\
+	".\oTDK.h"\
+	".\oTDKDoc.h"\
+	
+
+.\MainFrm.cpp : \
+	".\LeftView.h"\
+	".\MainFrm.h"\
+	".\oTDK.h"\
+	".\oTDKView.h"\
+	
+
+.\oTDK.cpp : \
+	".\LeftView.h"\
+	".\MainFrm.h"\
+	".\oTDK.h"\
+	".\oTDKDoc.h"\
+	
+
+.\oTDK.rc : \
+	".\res\oTDK.ico"\
+	".\res\oTDK.rc2"\
+	".\res\oTDKDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\oTDKDoc.cpp : \
+	".\CntrItem.h"\
+	".\oTDK.h"\
+	".\oTDKDoc.h"\
+	
+
+.\oTDKView.cpp : \
+	".\CntrItem.h"\
+	".\oTDK.h"\
+	".\oTDKDoc.h"\
+	".\oTDKView.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	

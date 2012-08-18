@@ -1,0 +1,462 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\oTDK.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\oTDK.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDD_TREES
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FINDNODE
+    SEPARATOR
+    BUTTON      ID_DIAP
+    BUTTON      ID_MAKESIG
+    BUTTON      ID_CHKSIG
+    SEPARATOR
+    BUTTON      ID_WORD
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Новое дерево\tCtrl+N",        IDD_TREES
+        MENUITEM "&Открыть...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Закрыть\tCtrl+Z",             CLOSEFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Вы&ход\tAlt+X",               ID_APP_EXIT
+    END
+    POPUP "&Редактировать"
+    BEGIN
+        MENUITEM "Поиск узла\tCtrl+F",          ID_FINDNODE
+        MENUITEM SEPARATOR
+        MENUITEM "Настройки...\tCtrl+I",        ID_WorkSpace
+    END
+    POPUP "&Просмотр"
+    BEGIN
+        MENUITEM "&Инструменты",                ID_VIEW_TOOLBAR
+        MENUITEM "&Статусная строка",           ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Документ Word",               ID_WORD
+    END
+    POPUP "Р&абота"
+    BEGIN
+        MENUITEM "Диагностический тест",        ID_DIAP
+        MENUITEM "С&нятие сигнатур",            ID_MAKESIG
+        MENUITEM SEPARATOR
+        MENUITEM "Проверка сигнатур",           ID_CHKSIG
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "&О программе...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "F",            ID_FINDNODE,            VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_WorkSpace,           VIRTKEY, CONTROL, NOINVERT
+    "N",            IDD_TREES,              VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 234, 69
+STYLE WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 10, "Times New Roman"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "oTDKShell Version 1.80",IDC_STATIC,40,10,83,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001,2002 АЭХК, ЦРП Genius+",IDC_STATIC,
+                    39,25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,177,7,50,14,WS_GROUP,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Эта программа позволяет выполнять тестирование средствами ТДК по описанному логическому дереву ТЭЗов.",
+                    IDC_STATIC,8,42,219,20
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 330, 10
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Тестирование выполняется по нажатию клавиши ПРОБЕЛ или правой кнопкой ""мыши""",
+                    IDC_STATIC,4,0,304,8
+END
+
+IDD_WorkSpace DIALOGEX 0, 0, 305, 186
+STYLE WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "Настройка рабочей среды"
+FONT 8, "Comic Sans MS", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Принять",IDOK,214,165,39,15,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Отмена",IDCANCEL,253,165,39,15,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,148,23,139,12,ES_AUTOHSCROLL
+    LTEXT           "Рабочий каталог:",IDC_STATIC,13,25,59,9
+    EDITTEXT        IDC_EDIT2,148,38,139,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Каталог области тестирования",IDC_STATIC,13,40,104,9
+    EDITTEXT        IDC_EDIT3,148,53,65,12,ES_AUTOHSCROLL
+    LTEXT           "Имя файла шаблона сигнатур ",IDC_STATIC,13,54,100,10
+    EDITTEXT        IDC_EDIT4,148,81,14,12,ES_AUTOHSCROLL
+    LTEXT           "Количество сигнатурных тестов",IDC_STATIC,13,81,110,11
+    CONTROL         "Check1",IDC_HIDETEST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,137,10,8
+    LTEXT           "Запускать тест узла в явном виде",IDC_STATIC,13,136,111,
+                    9
+    GROUPBOX        "",IDC_STATIC,7,127,288,37,BS_CENTER | BS_NOTIFY
+    EDITTEXT        IDC_EDIT5,148,67,65,13,ES_AUTOHSCROLL
+    LTEXT           "Имя файл шаблона диагностики",IDC_STATIC,13,68,108,10
+    CONTROL         "Формат запуска тестового драйвера",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,13,125,114,13,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,7,7,288,116
+    CONTROL         "Основные настройки",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,14,7,68,15,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Количество диагностических тестов",IDC_STATIC,13,96,128,
+                    10
+    EDITTEXT        IDC_EDIT6,148,95,14,12,ES_AUTOHSCROLL
+    LTEXT           "Диагностический тест с самопроверкой",IDC_STATIC,13,108,
+                    132,11
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,148,109,8,8
+    CONTROL         "Check1",IDC_HIDETEST2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,151,10,8
+    LTEXT           "При открытии проверять циклы",IDC_STATIC,13,150,111,9
+END
+
+IDD_TREES DIALOGEX 0, 0, 338, 189
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "Создание нового логического дерева переходов"
+FONT 10, "Times New Roman", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Выход",IDOK,286,167,32,14,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ENTR,113,149,35,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_DISABLED
+    EDITTEXT        IDC_PEREX,49,165,139,14,ES_MULTILINE | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_DISABLED
+    CONTROL         "Начать новую ветвь",IDC_STARTNEW,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,13,150,78,11
+    EDITTEXT        IDC_NAMEFILE,241,153,76,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Загрузить",IDC_LOADTREE,248,167,38,14,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "Работа с файлом дерева",IDC_STATIC,202,143,80,9,
+                    SS_CENTERIMAGE | SS_SUNKEN,WS_EX_TRANSPARENT
+    LTEXT           "Создание дерева",IDC_STATIC,31,139,56,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_CURNODE,153,149,34,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_DISABLED | NOT WS_BORDER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "Переход:",IDC_STATIC,13,169,30,11
+    LTEXT           "Вход:",IDC_STATIC,92,148,19,11
+    LTEXT           "Имя файла",IDC_STATIC,201,155,38,10
+    GROUPBOX        "",IDC_STATIC,197,144,133,40
+    GROUPBOX        "",IDC_STATIC,7,141,186,43
+    PUSHBUTTON      "Создать ",IDC_NEWTREE,210,167,38,14,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT1,7,1,323,132,ES_MULTILINE | ES_OEMCONVERT | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOGFIND DIALOGEX 100, 0, 183, 26
+STYLE DS_SYSMODAL | WS_POPUP | WS_BORDER
+FONT 10, "Times New Roman", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITFIND,45,7,131,12,NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Имя узла:",IDC_STATIC,7,7,35,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,0,0
+ PRODUCTVERSION 1,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904e3"
+        BEGIN
+            VALUE "Comments", "Тесирование ТЭЗов \0"
+            VALUE "CompanyName", "АЭХК, ЦРП\0"
+            VALUE "FileDescription", "oTDK Shell\0"
+            VALUE "FileVersion", "1, 8, 0, 0\0"
+            VALUE "InternalName", "oTDK\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001,2002\0"
+            VALUE "LegalTrademarks", "Genius+\0"
+            VALUE "OriginalFilename", "oTDK.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "oTDK Shell ТДК оболочка\0"
+            VALUE "ProductVersion", "1, 8, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1251
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_WorkSpace, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_TREES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DIALOGFIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 19
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "oTDK\n\nOTDK\n\n\nOTDK.Document\nOTDK Document "
+    IDD_TREES               "Создание описания узлов нового дерева\nНовое дерево"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "oTDK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Открыть файл\nОткрыть"
+    ID_FILE_CLOSE           "Закрыть активный документ\nЗакрыть"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "О программе\nО программе"
+    ID_APP_EXIT             "Выйти из приложения; запросить сохранение документа\nВыход"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Показать или скрыть панелль инструментов\nРаботать с панелью инструментов"
+    ID_VIEW_STATUS_BAR      "Показать или скрыть статусную панель\nРаботать с панелью статуса"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    IDS_STRINGm             "Будь готов"
+    ID_WorkSpace            "Настройки\nНастройки"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MAKESIG              "Формирование файлов сигнатур\nФормирование файлов сигнатур"
+    ID_WORD                 "Запуск в текущей дирректории документа MS WORD\nДокумент MS WORD(если он есть)"
+    ID_CHKSIG               "Проверка записанных сигнатур\nПроверка записанных сигнатур"
+    ID_DIAP                 "Переключение на диагностический тест\nПереключение на диагностический тест"
+    CLOSEFILE               "Закрыть файл\nЗакрыть файл"
+    ID_FINDNODE             "Поиск узла\nПоиск узла"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\oTDK.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,17 @@
+  ÇÖíÇú  ìóÄëíéä            èÖêÖïéÑõ    
+
+    1   MR          DR1,DR2
+        DR1         XR1,XR2,XR3
+        DR2         XR4
+        XR1         /
+        XR2         SR1
+        XR3         /
+        SR1         /
+        XR4         XR5
+        XR5         /
+    2   PR          DR3
+        DR3         /
+    3   KR          DR4,DR5
+        DR4         /
+        DR5         DR6
+        DR6         /

@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: oTDK - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPD173.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/oTDK.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Мои документы\программы\VCproject\oTDKnt\LeftView.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD173.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPD174.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/oTDK.pdb" /debug /machine:I386 /out:"Debug/oTDK.exe" /pdbtype:sept 
+".\Debug\FindNode.obj"
+".\Debug\LeftView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\oTDK.obj"
+".\Debug\oTDKDoc.obj"
+".\Debug\OTDKView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TreeMake.obj"
+".\Debug\WorkINI.obj"
+".\Debug\oTDK.res"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPD174.TMP"
+<h3>Output Window</h3>
+Compiling...
+LeftView.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/oTDK.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\FindNode.sbr" ".\Debug\LeftView.sbr" ".\Debug\MainFrm.sbr" ".\Debug\oTDK.sbr" ".\Debug\oTDKDoc.sbr" ".\Debug\OTDKView.sbr" ".\Debug\TreeMake.sbr" ".\Debug\WorkINI.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+oTDK.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
